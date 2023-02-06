@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body> 
+
+  <h3 style="display: flex; justify-content: center; margin-top: 2%;">Pre Entrega 3</h3>
+
+  <div class="container">
+    <h2></h2>
+    <p></p>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Ingrese Nombre y Apellido" name="text1" id="text1">
+      </div>
+      <div class="form-group">
+        <input type="number" class="form-control" placeholder="Ingrese su DNI" name="text2" id="text2">
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <a href="#" class="btn btn-warning" id="botonSubmit">Ingresar</a>
+
+        <a href="#" class="btn btn-danger" id="limpiar">Limpiar</a>
+      </div>
+    </form>
+  </div>
+
+  <div class="container" style="display: flex; justify-content: center;">
+    <h2 id="bienvenido"></h2>
+  </div>
+
+
+
+    <section>
+    <div class="container" style="display: flex; justify-content: center; margin-top: 5%;">
+        <div class="cardContainer1">
+          <div class="card" style="width:400px">
+            <!--<img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">*/-->
+            <div class="card-body">
+                <h4 class="card-title" id="curso1">Curso 1</h4>
+                <p class="card-text" id="precio1">2000</p>
+                <div style="display: flex; justify-content: center;">
+                <a href="#" class="btn btn-danger" id="boton1">comprar</a>  
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        
+        <div class="cardContainer2">
+          <div class="card" style="width:400px">
+            <div class="card-body">
+            <h4 class="card-title" id="curso2">Curso 2</h4>
+            <p class="card-text" id="precio2">1500</p>
+            <div style="display: flex; justify-content: center;">
+            <a href="#" class="btn btn-danger" id="boton2">comprar</a>
+            </div>
+          </div>
+          <!-- <img class="card-img-bottom" src="img_avatar6.png" alt="Card image" style="width:100%"> -->
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <section class="listado">
+
+      <div class="container">
+        <h2 style="display: flex; justify-content: center; margin-top: 5vh;">CURSOS SELECCIONADOS</h2>
+        
+        <table class="table table-bordered table-sm" id="tablaCursos">
+          <thead>
+            <tr>
+              <th>CURSO</th>
+              <th>PRECIO</th>
+            </tr>
+
+          </thead>
+          <tbody>
+            <tr id="lista">
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+
+    <section style="display: flex; justify-content: center; margin-top: 5%;">
+      <div id="total">
+          <p>TOTAL: $ </p>
+      </div>
+
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
