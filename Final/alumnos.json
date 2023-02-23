@@ -1,0 +1,5 @@
+[
+    {"nombre": "gonzalo", "apellido": "Gigliani", "mail": "gonzalogigliani@gmail.com", "pass": 123},
+    {"nombre": "marta", "apellido": "Martinez", "mail": "martamartinez@gmail.com", "pass": 456},
+    {"nombre": "rodrigo", "apellido": "Rodriguez", "mail": "rodrigorodriguez@gmail.com", "pass": 789}
+]
